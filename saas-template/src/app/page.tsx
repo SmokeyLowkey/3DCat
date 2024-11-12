@@ -2,7 +2,7 @@
 
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
-import { Search, Zap, Mouse, Box, Book } from 'lucide-react';
+import { Search, Zap, Mouse, Box, Book, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef } from 'react';
@@ -77,16 +77,16 @@ export default function LandingPage() {
           <span className="font-bold text-gray-800">3D Parts Catalog</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/features">
             Features
           </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/pricing">
             Pricing
           </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/about">
             About
           </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/contact">
             Contact
           </Link>
         </nav>
@@ -173,15 +173,27 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-gray-800">What Our Customers Say</h2>
             <div className="grid gap-6 lg:grid-cols-3">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="flex flex-col items-center text-center space-y-2 p-6 bg-white rounded-lg shadow-lg">
-                  <Zap className="h-8 w-8 text-blue-600" />
+              <div className="flex flex-col items-center text-center space-y-2 p-6 bg-white rounded-lg shadow-lg">
+                  <Star className="h-8 w-8 text-blue-600" />
                   <p className="text-gray-600">
                     "This 3D catalog has transformed how we find and order parts. It's faster, more accurate, and actually enjoyable to use."
                   </p>
-                  <p className="font-semibold text-gray-800">- Satisfied Customer {i}</p>
+                  <p className="font-semibold text-gray-800">- John Doe</p>
                 </div>
-              ))}
+              <div className="flex flex-col items-center text-center space-y-2 p-6 bg-white rounded-lg shadow-lg">
+                <Star className="h-8 w-8 text-blue-600" />
+                <p className="text-gray-600">
+                  "The interactive models are a game changer! I can see every detail before making a purchase."
+                </p>
+                <p className="font-semibold text-gray-800">- Jane Smith</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-2 p-6 bg-white rounded-lg shadow-lg">
+                <Star className="h-8 w-8 text-blue-600" />
+                <p className="text-gray-600">
+                  "I love how easy it is to navigate the catalog. It's made my job so much easier."
+                </p>
+                <p className="font-semibold text-gray-800">- Alex Johnson</p>
+              </div>
             </div>
           </div>
         </section>
@@ -199,7 +211,7 @@ export default function LandingPage() {
                     placeholder="Enter your email"
                     type="email"
                   />
-                  <Button type="submit" className="bg-white text-blue-700 hover:bg-blue-100">
+                  <Button type="submit" className="bg-white text-blue-800 hover:bg-blue-100">
                     Get Started
                   </Button>
                 </form>
@@ -212,18 +224,18 @@ export default function LandingPage() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white">
-        <p className="text-xs text-gray-600">
+        <p className="text-xs text-gray-500 dark:text-gray-400">
           © 2024 3D Parts Catalog. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-xs hover:underline underline-offset-4 text-gray-500 dark:text-gray-400" href="#">
             Terms of Service
           </Link>
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors" href="#">
+          <Link className="text-xs hover:underline underline-offset-4 text-gray-500 dark:text-gray-400" href="#">
             Privacy
           </Link>
         </nav>
       </footer>
     </div>
-  );
+  )
 }
