@@ -5,29 +5,9 @@ import Link from "next/link";
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-gray-200 bg-white">
-        <Link className="flex items-center justify-center" href="/">
-          <Box className="h-6 w-6 mr-2 text-blue-600" />
-          <span className="font-bold text-gray-800">3D Parts Catalog</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/features">
-            Features
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/pricing">
-            Pricing
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/about">
-            About
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/contact">
-            Contact
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container mx-auto px-4 md:px-6"> {/* Centered with auto margins */}
+          <div className="container mx-auto px-4 md:px-6">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-center mb-8">
               Get in Touch
             </h1>

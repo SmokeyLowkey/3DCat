@@ -5,26 +5,6 @@ import Link from "next/link";
 export default function PricingPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-gray-200 bg-white">
-        <Link className="flex items-center justify-center" href="/">
-          <Box className="h-6 w-6 mr-2 text-blue-600" />
-          <span className="font-bold text-gray-800">3D Parts Catalog</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/features">
-            Features
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/pricing">
-            Pricing
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/about">
-            About
-          </Link>
-          <Link className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="/contact">
-            Contact
-          </Link>
-        </nav>
-      </header>
       <main className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-4">Pricing Plans</h1>
         <p className="text-xl text-gray-600 text-center mb-12">Choose the plan that best fits your needs and start saving time today</p>
@@ -134,7 +114,7 @@ export default function PricingPage() {
               <h2 className="text-3xl font-bold mb-4">Ready to transform your parts catalog?</h2>
               <p className="text-xl mb-4 md:mb-0">Start your 14-day free trial today. No credit card required.</p>
             </div>
-            <Button className="bg-white text-blue-800 hover:bg-gray-100">Start Free Trial</Button>
+            <Button className="bg-white text-blue-700 hover:bg-gray-100">Start Free Trial</Button>
           </div>
         </div>
       </main>
